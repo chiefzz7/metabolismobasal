@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora TMB</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main>
+        <section class="texts">
+            <h1>Olá, seja bem-vindo(a) a sua calculadora TMB</h1>
+            <h5>O que é uma Taxa Metabólica Basal?</h5>
+            <h5 style="color: #b7a6a6;">A taxa metabólica basal (TMB), também conhecida como metabolismo basal ou taxa de metabolismo basal, é a quantidade de energia que o corpo necessita para manter as funções vitais em repouso absoluto.</h5>
+        </section>
+        
+        <section class="calculadora-basal">
+            <form>
+                <h1>Calcule sua TBM agora:</h1>
+
+                <div class="group-form" style="margin-top: 5px;">
+                    <label>Idade:</label>
+                    <input type="number" id="idade">
+                </div>
+
+                <div class="group-form">
+                    <label>Peso:</label>
+                    <input type="number" id="peso">
+                </div>
+
+                <div class="group-form">
+                    <label>Altura:</label>
+                    <input type="number" id="altura">
+                </div>
+
+                <div class="group-form">
+                    <label>Sexo:</label>
+                    <select id="sexo">
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                    </select>
+                </div>
+
+                <div class="group-form">
+                    <button onclick="processarDados()">Calcular</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="res">
+            <h3 id="res" class="resh3"></h3>
+        </section>
+    </main>
+
+    <footer>
+            <p>Exercício DIO - Contribuir com um projeto Open Source</p>
+            <p>Desenvolvido por Samuel Ramos©</p>
+            
+            <div class="images">
+                <a href="https://github.com/chiefzz7/"><img src="assets/images/image_01-logoGitHub.svg" alt="Icon GitHub"></a>
+                <a href="https://instagram.com/ramozz14/"><img src="assets/images/image_02-logoInsta.svg" alt="Icon Instagram"></a>
+                <a href="https://br.linkedin.com/in/samuel-ramos-33a3a432b?trk=people-guest_people_search-card"><img src="assets/images/image_03-logoLinkedin.svg" alt="Icon LinkedIn"></a>
+            </div>
+        </footer>
+
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
